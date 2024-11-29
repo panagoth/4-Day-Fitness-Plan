@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Workout Program</h1>
+        <p>4-Day Powerlifting & Bodybuilding Schedule</p>
+    </header>
+    <main>
+        <div class="day" onclick="showDetails('monday')">
+            <h2>Monday: Lower Body (Strength)</h2>
+            <p>Click for details</p>
+        </div>
+        <div class="day" onclick="showDetails('tuesday')">
+            <h2>Tuesday: Upper Body (Hypertrophy)</h2>
+            <p>Click for details</p>
+        </div>
+        <div class="day" onclick="showDetails('thursday')">
+            <h2>Thursday: Upper Body (Strength)</h2>
+            <p>Click for details</p>
+        </div>
+        <div class="day" onclick="showDetails('friday')">
+            <h2>Friday: Lower Body & Deadlift Focus (Hypertrophy)</h2>
+            <p>Click for details</p>
+        </div>
+    </main>
+    <div id="details" class="details hidden">
+        <h3 id="day-title"></h3>
+        <ul id="day-details"></ul>
+        <button onclick="hideDetails()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
