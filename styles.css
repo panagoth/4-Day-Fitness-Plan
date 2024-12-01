@@ -1,91 +1,72 @@
-/* Βασικές ρυθμίσεις */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* Σκούρο φόντο */
-    color: #e0e0e0; /* Ανοιχτόχρωμο κείμενο */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe4e1; /* Απαλό ροζ */
+  color: #333;
 }
 
-/* Επικεφαλίδα */
+/* Header Styles */
 header {
-    text-align: center;
-    background-color: #1e1e1e; /* Σκούρο γκρι */
-    color: #4CAF50; /* Πράσινο */
-    padding: 20px 0;
+  background-color: #ff69b4; /* Ροζ χρώμα */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 5px solid #ff1493; /* Πιο σκούρο ροζ */
 }
 
-h1 {
-    margin: 0;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px #ff1493;
 }
 
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Main Content Styles */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+  padding: 20px;
 }
 
-/* Κάρτες για τις ημέρες */
-.day {
-    background-color: #1e1e1e; /* Σκούρο γκρι */
-    border: 1px solid #333; /* Σκούρο περίγραμμα */
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s;
+section {
+  background: white;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 12px; /* Στρογγυλεμένες γωνίες */
+  box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2); /* Απαλή ροζ σκιά */
+  border: 2px dashed #ff69b4; /* Ροζ περίγραμμα */
 }
 
-.day:hover {
-    transform: scale(1.05);
-    border-color: #4CAF50; /* Πράσινο hover */
+section h2 {
+  color: #ff1493; /* Φούξια */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* Λεπτομέρειες ημέρας */
-.details {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1e1e1e; /* Σκούρο γκρι */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    max-width: 400px;
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Κουμπιά */
-button {
-    background-color: #4CAF50; /* Πράσινο */
-    color: #121212; /* Σκούρο κείμενο */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #45a049; /* Σκούρο πράσινο hover */
-}
-
-/* Λίστα */
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: heart; /* Καρδούλες */
+  padding-left: 20px;
+  color: #ff69b4;
 }
 
 ul li {
-    margin: 8px 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 5px solid #ff1493;
 }
